@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三目並べ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>三目並べ</h1>
+    <p id="status" class="status">Player X の番です</p>
+
+    <div id="board" class="board" role="grid" aria-label="三目並べの盤面">
+      <button class="cell" data-index="0" role="gridcell" aria-label="マス 1"></button>
+      <button class="cell" data-index="1" role="gridcell" aria-label="マス 2"></button>
+      <button class="cell" data-index="2" role="gridcell" aria-label="マス 3"></button>
+      <button class="cell" data-index="3" role="gridcell" aria-label="マス 4"></button>
+      <button class="cell" data-index="4" role="gridcell" aria-label="マス 5"></button>
+      <button class="cell" data-index="5" role="gridcell" aria-label="マス 6"></button>
+      <button class="cell" data-index="6" role="gridcell" aria-label="マス 7"></button>
+      <button class="cell" data-index="7" role="gridcell" aria-label="マス 8"></button>
+      <button class="cell" data-index="8" role="gridcell" aria-label="マス 9"></button>
+    </div>
+
+    <div id="score" class="score">
+      <span class="score-x">X: <strong id="score-x">0</strong></span>
+      <span class="score-divider">vs</span>
+      <span class="score-o">O: <strong id="score-o">0</strong></span>
+    </div>
+
+    <button id="reset-btn" class="reset-btn" type="button">もう一度プレイ</button>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
